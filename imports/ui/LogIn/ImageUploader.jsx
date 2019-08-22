@@ -52,7 +52,6 @@ class ImageUploader extends React.Component {
    Handle file validation
    */
   onDropFile(e) {
-    console.log("checking");
     const files = e.target.files;
     const allFilePromises = [];
 
@@ -216,7 +215,7 @@ class ImageUploader extends React.Component {
           </div>
           <button
             type={this.props.buttonType}
-            className={"chooseFileButton " + this.props.buttonClassName}
+            className={"chooseFileButton " + this.props.buttonClassName + "button is-light is-small"}
             style={this.props.buttonStyles}
             onClick={this.triggerFileUpload}
           >
